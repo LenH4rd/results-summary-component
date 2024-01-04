@@ -20,8 +20,8 @@ html {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role=list],
-ol[role=list] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -52,8 +52,7 @@ h4 {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
   color: currentColor;
 }
 
@@ -82,74 +81,3 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
-
-body {
-  font-size: 1.125rem;
-  color: hsl(0, 0%, 100%);
-  display: flex;
-  justify-content: center;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-}
-
-article {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-}
-
-.total__score {
-  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
-  border-radius: 100%;
-  width: 8.75rem;
-  height: 8.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-}
-
-section {
-  color: hsl(224, 30%, 27%);
-  padding: 0 1.875rem;
-}
-
-li {
-  display: flex;
-  justify-content: space-between;
-}
-
-li span {
-  display: flex;
-  gap: 1rem;
-}
-
-.reaction {
-  color: hsl(0, 100%, 67%);
-}
-
-.memory {
-  color: hsl(39, 100%, 56%);
-}
-
-.verbal {
-  color: hsl(166, 100%, 37%);
-}
-
-.visual {
-  color: hsl(234, 85%, 45%);
-}
-
-button {
-  width: 100%;
-  border-radius: 100px;
-  border: none;
-  background-color: hsl(224, 30%, 27%);
-  color: hsl(0, 0%, 100%);
-}/*# sourceMappingURL=main.css.map */

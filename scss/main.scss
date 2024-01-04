@@ -1,27 +1,87 @@
-$primary-lightRed: hsl(0, 100%, 67%);
-$primary-orangeyYellow: hsl(39, 100%, 56%);
-$primary-greenTeal: hsl(166, 100%, 37%);
-$primary-cobaltBLue: hsl(234, 85%, 45%);
+@import "./resets";
+@import "./variables";
 
-$gradient-lightslateBlue: hsl(252, 100%, 67%); // background
-$gradient-lightroyalBlue: hsl(241, 81%, 54%); // background
+@function weight($weight-name) {
+  @return map-get($font-weight, $weight-name);
+}
 
-$gradient-violetBllue: hsla(256, 72%, 46%, 1); // circle
-$gradient-persianBlue: hsla(241, 72%, 46%, 0); // circle
-
-$neutral-White: hsl(0, 0%, 100%);
-$neutral-paleBlue: hsl(221, 100%, 96%);
-$neutral-lightLavender: hsl(241, 100%, 89%);
-$neutral-darkgrayBlue: hsl(224, 30%, 27%);
-
-$font-size: 1.125rem;
-
-$font-weight: (
-  "medium": 500,
-  "bold": 700,
-  "extraBold": 800,
-);
+@mixin flexCenter($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}
 
 body {
   font-size: $font-size;
+  color: $neutral-White;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+article {
+  @include flexCenter(column);
+  background-image: linear-gradient(
+    $gradient-lightslateBlue,
+    $gradient-lightroyalBlue
+  );
+}
+
+.total__score {
+  background-image: linear-gradient(
+    $gradient-violetBlue,
+    $gradient-persianBlue
+  );
+  border-radius: 100%;
+  width: 8.75rem;
+  height: 8.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+section {
+  color: $neutral-darkgrayBlue;
+  padding: 0 1.875rem;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+}
+
+li span {
+  display: flex;
+  gap: 1rem;
+}
+
+.reaction {
+  color: $primary-lightRed;
+}
+
+.memory {
+  color: $primary-orangeyYellow;
+}
+
+.verbal {
+  color: $primary-greenTeal;
+}
+
+.visual {
+  color: $primary-cobaltBLue;
+}
+
+button {
+  width: 100%;
+  border-radius: 100px;
+  border: none;
+  background-color: $neutral-darkgrayBlue;
+  color: $neutral-White;
 }
