@@ -185,7 +185,7 @@ section button {
   color: hsl(0, 0%, 100%);
   border: none;
 }
-section button:active {
+section button:hover {
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 

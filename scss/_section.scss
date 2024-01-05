@@ -59,7 +59,7 @@ section {
     color: $neutral-White;
     border: none;
 
-    &:active {
+    &:hover {
       background-image: linear-gradient(
         $gradient-lightslateBlue,
         $gradient-lightroyalBlue
