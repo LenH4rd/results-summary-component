@@ -186,7 +186,7 @@ section button {
   border: none;
 }
 section button:hover {
-  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  background-image: linear-gradient(hsl(252, 100%, 67%), red);
 }
 
 body {

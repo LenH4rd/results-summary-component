@@ -60,10 +60,7 @@ section {
     border: none;
 
     &:hover {
-      background-image: linear-gradient(
-        $gradient-lightslateBlue,
-        $gradient-lightroyalBlue
-      );
+      background-image: linear-gradient($gradient-lightslateBlue, red);
     }
   }
 }
