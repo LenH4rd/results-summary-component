@@ -139,6 +139,10 @@ section {
   flex-direction: column;
   gap: 1.5rem;
 }
+section h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
 section .results {
   display: flex;
   flex-direction: column;
